@@ -10,7 +10,7 @@ int main()
     printf("Enter a base number: ");
     scanf("%lf", &base);
 
-    printf("Enter an exponent: ");
+    printf("Enter a whole number exponent: ");
     scanf("%d", &exponent);
 
     if (exponent > 0)
@@ -31,8 +31,12 @@ int main()
         result = 1 / result;
         printf("\nAnswer = %lf\n\n", result);
     }
-    else{
+    else if (exponent===0)
+    {
         printf("\nAnswer = %lf\n\n", result);
+    }
+    else{
+        printf("Program does not support Fractions\n");
     }
     
     return 0;
